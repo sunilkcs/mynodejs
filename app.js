@@ -1,3 +1,3 @@
 var message = "hello wrold";
 console.log(message);
-console.log("Welcome to Microsoft!!")
+console.log("Welcome to Google!!")
