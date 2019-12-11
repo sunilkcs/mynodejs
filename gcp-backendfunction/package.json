@@ -1,0 +1,19 @@
+{
+  "name": "backendfunction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "functions-framework --target=pubsubfunc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/pubsub": "^1.1.6"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.3.2"
+  }
+}
