@@ -1,0 +1,6 @@
+runtime: nodejs10
+service: indexservice
+handlers:
+  - url: /
+    static_files: index.html
+    upload: index.html
