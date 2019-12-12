@@ -16,14 +16,23 @@
 
 // [START gae_node_request_example]
 const express = require('express');
-
+const parser = require('body-parser');
 const app = express();
+app.use(parser.json());
 
 app.get('/', (req, res) => {
   res
     .status(200)
-    .send('A pubsub push subsciber put some message changed service name version without node modules')
+    .send('A pubsub webhook endpoint')
     .end();
+});
+
+app.post('/', (req, res) => {
+  var body = req.body;
+  var name = req.body.name;
+  console.log('Request body is : ' + body);
+  console.log('name value is  : ' + name);
+  res.status(200).send('Name : ' + name).end();
 });
 
 // Start the server
