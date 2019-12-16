@@ -1,0 +1,10 @@
+steps:
+    - name: 'gcr.io/cloud-builders/npm'
+      args: ['install']
+      dir: 'nodejsapp'
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ["build", "-t", "gcr.io/sunilgcpexam/nodejsapp", "."]
+      dir: 'nodejsapp'
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ["push", "gcr.io/sunilgcpexam/nodejsapp:latest"]
+      dir: 'nodejsapp'
