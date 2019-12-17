@@ -9,6 +9,9 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "express": "^4.17.1"
+    "@google-cloud/tasks": "^1.6.1",
+    "express": "^4.17.1",
+    "body-parser": "^1.18.3",
+    "yargs": "^15.0.0"
   }
 }

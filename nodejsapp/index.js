@@ -1,6 +1,7 @@
 exports.nodejshttpfunc = (req,res) => {
-  console.log("Response from my NodeJS function!! for http trigger1");
-  res.status(200).send("Response from my NodeJS function!!");
+  var message = req.query.message || req.body.message || 'Hello World2!';
+  console.log(`Response from https trigger function is ${message}`);
+  res.status(200).send(`Response from http trigger function is ${message}`);
 };
 
 exports.nodejspubsubfunc = (event, context) => {
