@@ -1,0 +1,13 @@
+runtime: custom
+env: flex
+service: endpointapp
+
+beta_settings:
+  # Enable Google Cloud Endpoints API management.
+  use_endpoints_api_management: true
+  # Specify the Open API specification.
+  endpoints_swagger_spec_file: openapi.yaml
+
+readiness_check:
+  path: "/readiness_check"
+  app_start_timeout_sec: 600
