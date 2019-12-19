@@ -1,0 +1,7 @@
+indexes:
+    - kind: Book
+      properties:
+      - name: author
+        direction: asc
+      - name: title
+        direction: asc
